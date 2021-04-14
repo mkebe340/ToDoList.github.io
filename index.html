@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="./fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
+    <title>TO DO LIST</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="dropdown">
+            <button class="sort-boutton" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-sort fa-lg"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Time</a>
+                <a class="dropdown-item" href="#">Priority +</a>
+                <a class="dropdown-item" href="#">Priority -</a>
+            </div>
+        </div>
+
+        <a class="navbar-brand text-center" href="#">Home</a>
+
+        </div>
+        <div class="navi ">
+            <div>
+                <button>
+                    <a href="form.html"><i class="fas fa-plus "></i></a>
+                </button>
+            </div>
+            <!--dans le button  plus, diaologue ecrire item et list-->
+            <div class="mr-5">
+                <button>
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+            </div>
+
+            <!--buttion trash a choix multiple à suprimer-->
+
+            <div class=" dropleft">
+                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="far fa-user-circle"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="calendar.html"> <i class="far fa-calendar-alt">
+                            calendar</i></a>
+                    <a class="dropdown-item" href="#"><i class="fas fa-cog"> setting </i></a>
+                    <a class="dropdown-item" href="#"> <i class="fas fa-sign-out-alt"> log out</i></a>
+                </div>
+            </div>
+            <!--button de profil qui a un dropdown-->
+    </nav>
+
+    <!------------------------ASIDE----------------------------------------->
+    <div class="">
+        <div class="row w-100 mb-5">
+            <aside class="col-3">
+                <ul>
+                    <li class="active-school"> School</li>
+                    <li> Work</li>
+                    <li> Bills</li>
+                </ul>
+
+                <div class="button-div">
+                    <button type="button" class="btn button-plus" data-toggle="modal" data-target="#exampleModal"
+                        data-whatever="@mdo">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">New item</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="col-form-label">title:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Send message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <!------------------------MAIN------------------------------------------>
+            <main class="col-6">
+                           <!------------------------CARD------------------------------------------>
+                <div class="">
+                    <div class="card-list very-important ">
+                        <div class="text-list">
+                            <input type="checkbox" class="check" name="check" />
+                            <p>Revise English report </p>
+                        </div>
+
+                        <div><button class="edit"><i class="far fa-edit"></i></button></div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="card-list important ">
+                        <div class="text-list">
+                            <input type="checkbox" class="check" name="check" />
+                            <p>Finish Physics homework</p>
+                        </div>
+
+                        <div><button class="edit"><i class="far fa-edit"></i></button></div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="card-list less-important ">
+                        <div class="text-list">
+                            <input type="checkbox" class="check" name="check" />
+                            <p>Submit form to financial and office</p>
+                        </div>
+
+                        <div><button class="edit"><i class="far fa-edit"></i></button></div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="card-list important ">
+                        <div class="text-list">
+                            <input type="checkbox" class="check" name="check" />
+                            <p>Email Prof Bob about grades</p>
+                        </div>
+
+                        <div><button class="edit"><i class="far fa-edit"></i></button></div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="card-list important ">
+                        <div class="text-list">
+                            <input type="checkbox" class="check" name="check" />
+                            <p>Email Prof Bob about grades</p>
+                        </div>
+
+                        <div><button class="edit"><i class="far fa-edit"></i></button></div>
+                    </div>
+                </div>
+
+                <!------------------------BUTTON LINK------------------------------------------>
+                <div class="button-div">
+                    <button type="button" class="btn button-plus" data-toggle="modal" data-target="#exampleModal"
+                        data-whatever="@mdo">
+                        <i class="fas fa-plus "></i>
+                    </button>
+                </div>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">New list</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+
+                                    <div class="form-group">
+                                        <label for="message-text" class="col-form-label">Message:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">add message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
